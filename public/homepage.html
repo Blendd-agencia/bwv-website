@@ -4,239 +4,210 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BWV Business & Tax Advisors</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,500;8..144,600&display=swap" rel="stylesheet">
+<meta name="description" content="BWV Business & Tax Advisors">
 <style>
-:root{--navy:#071d37;--teal:#306980;--teal2:#3a7c96;--ice:#dbe8ee;--ink:#0b2340;--line:#d8e1e6}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap');
+:root{
+  --navy:#071d37;--ink:#0a2340;--teal:#367a94;--ice:#dce9ef;--line:#d8e3e8;--white:#fff;
+  --content:1278px;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--ink);font-family:"DM Sans",sans-serif;font-size:16px;line-height:1.5}
-img{display:block;max-width:100%}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
+img{display:block}
 button{font:inherit}
-.site{overflow:hidden}
-.container{width:min(1278px,calc(100% - 80px));margin:0 auto}
-.serif{font-family:"Roboto Serif",serif;font-weight:500;letter-spacing:-.03em}
-.kicker{font-size:10px;letter-spacing:.48em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
-.kicker:after{content:"";width:30px;height:1px;background:currentColor;opacity:.75}
-.btn{height:56px;padding:0 30px;background:var(--teal);color:#fff;border-radius:3px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px}
-.btn-outline{background:transparent;color:var(--teal);border:1px solid var(--teal)}
-.arrow{font-size:19px;line-height:1;transform:translateY(-1px)}
+.container{width:min(var(--content),calc(100% - 48px));margin:0 auto}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.025em}
+.eyebrow{font-size:10px;line-height:1;text-transform:uppercase;letter-spacing:.48em;font-weight:500}
+.eyebrow.line{display:flex;align-items:center;gap:12px}
+.eyebrow.line:after{content:"";width:30px;height:1px;background:currentColor;opacity:.75}
+.btn{height:56px;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:0 29px;background:var(--teal);color:#fff;border:1px solid var(--teal);font-weight:600;font-size:14px;transition:.25s ease;cursor:pointer}
+.btn:hover{background:#2d6e86;border-color:#2d6e86}
+.btn.outline{background:transparent;color:var(--teal)}
+.btn.outline:hover{background:var(--teal);color:#fff}
+.arrow{font-size:18px;line-height:1;transform:translateY(-1px)}
 
 /* HERO */
-.hero{height:806px;position:relative;color:#fff;background:#071d37}
-.hero-bg{position:absolute;inset:0;background:
-linear-gradient(180deg,rgba(7,29,55,.85) 0%,rgba(7,29,55,0) 61%),
-linear-gradient(180deg,rgba(48,105,128,0) 50%,rgba(48,105,128,.76) 100%),
-linear-gradient(90deg,rgba(7,29,55,.95) 0%,rgba(7,29,55,0) 100%),
-url("https://www.figma.com/api/mcp/asset/3c45eb6e-79a3-4420-8493-7bb3d91f45e0/00b5e.png") center/cover no-repeat}
-.hero .container{height:100%;position:relative}
-.header{position:absolute;top:50px;left:0;right:0;height:42px;display:flex;align-items:center;z-index:10}
-.brand{width:198px;height:42px;display:flex;align-items:center}
-.brand img{width:198px;height:auto}
-.nav{margin-left:auto;display:flex;align-items:center;gap:29px;font-size:14px}
-.nav-link{position:relative;display:flex;align-items:center;gap:8px;height:42px;white-space:nowrap}
-.nav-link:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:#fff;transition:right .25s ease}
-.nav-link:hover:after{right:0}
-.chevron{width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px)}
-.nav .talk{width:157px;justify-content:center;background:var(--teal);border-radius:3px;font-weight:700}
+.hero{height:806px;position:relative;color:#fff;overflow:hidden;background:
+ linear-gradient(90deg,rgba(5,29,53,.96) 0%,rgba(5,31,55,.83) 32%,rgba(7,35,59,.48) 65%,rgba(7,35,59,.35) 100%),
+ url('https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/b2e8bdd9-fe58-426a-b685-1a983119b682.png') center/cover no-repeat}
+.hero-inner{height:100%;position:relative}
+.site-header{position:absolute;left:0;right:0;top:36px;height:42px;display:flex;align-items:center;z-index:20}
+.brand{width:198px;height:42px;flex:0 0 auto}
+.brand img{width:100%;height:100%;object-fit:contain;object-position:left center}
+.nav{margin-left:auto;display:flex;align-items:center;gap:31px;font-size:14px}
+.nav-link{height:42px;display:flex;align-items:center;position:relative;white-space:nowrap}
+.nav-link:after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:#fff;transition:width .22s ease}
+.nav-link:hover:after{width:100%}
+.nav-link.has-dropdown{gap:8px}
+.chev{width:7px;height:7px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+.nav .talk{width:157px;justify-content:center;background:var(--teal);font-weight:600;padding:0 18px;margin-left:11px}
 .nav .talk:after{display:none}
-.hero-copy{position:absolute;left:0;top:278px;width:646px}
-.hero h1{font-size:60px;line-height:68px;margin:0 0 27px}
-.hero-copy p{font-size:18px;line-height:1.5;width:573px;margin:0 0 28px;font-weight:500}
-.scroll-cue{position:absolute;left:-16px;top:661px;width:46px;height:90px}
-.scroll-word{position:absolute;left:10px;top:0;width:49px;font-size:14px;font-weight:500;transform:rotate(-90deg);transform-origin:left top}
-.scroll-line{position:absolute;left:22px;top:30px;width:1px;height:60px;background:rgba(255,255,255,.35);overflow:hidden}
-.scroll-line:after{content:"";position:absolute;left:0;top:-30px;width:1px;height:28px;background:#fff;animation:scrollLine 1.8s ease-in-out infinite}
-@keyframes scrollLine{0%{top:-30px}70%,100%{top:64px}}
-.hero-carousel{position:absolute;left:763px;top:551px;width:859px;height:200px}
-.hero-progress{position:absolute;left:0;top:8px;width:515px;height:3px;z-index:4;cursor:ew-resize}
-.hero-progress:before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.2)}
-.hero-progress-fill{height:3px;width:178px;background:#fff}
-.hero-viewport{position:absolute;left:0;top:0;width:596px;height:200px;overflow:hidden;cursor:grab;touch-action:pan-y;user-select:none}
+.hero-copy{position:absolute;left:0;top:275px;width:646px;z-index:4}
+.hero h1{font:400 62px/.95 var(--serif);letter-spacing:-.026em;margin:0;color:#fff}
+.hero-sub{width:573px;margin:25px 0 21px;font-size:16px;line-height:1.55;color:#fff}
+.scroll-cue{position:absolute;left:-16px;bottom:55px;width:46px;height:90px;z-index:6}
+.scroll-label{position:absolute;left:9px;top:0;font-size:11px;writing-mode:vertical-rl;transform:rotate(180deg)}
+.scroll-rule{position:absolute;left:22px;top:30px;width:1px;height:60px;background:rgba(255,255,255,.55);overflow:hidden}
+.scroll-rule:after{content:"";position:absolute;left:0;top:-25px;width:1px;height:25px;background:#fff;animation:scrollPulse 1.65s ease-in-out infinite}
+@keyframes scrollPulse{0%{top:-25px}70%,100%{top:62px}}
+.hero-carousel{position:absolute;left:763px;top:510px;width:860px;z-index:8}
+.hero-progress{position:relative;width:515px;height:20px;margin-bottom:20px;cursor:ew-resize;touch-action:none}
+.hero-progress .rail,.hero-progress .fill{position:absolute;left:0;top:10px;height:3px}
+.hero-progress .rail{width:100%;background:rgba(255,255,255,.28)}
+.hero-progress .fill{width:0;background:#fff}
+.hero-viewport{overflow:hidden;cursor:grab;touch-action:pan-y;user-select:none}
 .hero-viewport.dragging{cursor:grabbing}
 .hero-track{display:flex;gap:11px;will-change:transform}
-.hero-card{position:relative;flex:0 0 424px;height:200px;padding-top:48px}
-.hero-card-bg{position:absolute;left:0;right:0;top:48px;height:152px;background:rgba(255,255,255,.3);backdrop-filter:blur(5px);border-radius:3px}
-.hero-card-img{position:absolute;left:11px;top:60px;width:168px;height:128px;border-radius:3px;overflow:hidden;background:#071d37}
-.hero-card-img img{width:100%;height:100%;object-fit:cover;opacity:.58;pointer-events:none;-webkit-user-drag:none}
-.hero-card-copy{position:absolute;left:200px;top:94px;width:202px;color:#fff}
-.hero-card-copy h3{font:500 24px/36px "Roboto Serif",serif;letter-spacing:.02em;margin:0 0 20px}
-.hero-card-copy p{font:500 16px/22px "DM Sans",sans-serif;letter-spacing:.02em;margin:0}
+.hero-card{flex:0 0 424px;height:152px;background:rgba(209,224,233,.58);backdrop-filter:blur(5px);display:grid;grid-template-columns:168px 1fr;gap:21px;padding:12px 18px 12px 11px}
+.hero-card-media{width:168px;height:128px;overflow:hidden;background:#153957}
+.hero-card-media img{width:100%;height:100%;object-fit:cover;opacity:.72;pointer-events:none;-webkit-user-drag:none;user-select:none}
+.hero-card-copy{display:flex;flex-direction:column;justify-content:center}
+.hero-card h3{font:500 23px/1.1 var(--serif);margin:0 0 10px;color:#fff}
+.hero-card p{font-size:14px;line-height:1.35;margin:0;color:#fff}
 
-/* WHY CHOOSE */
-.why{padding:104px 0 0}
-.why-intro{display:grid;grid-template-columns:612px 1fr;gap:178px;align-items:start}
-.why h2,.section-title{font-size:60px;line-height:1.15;margin:12px 0 0}
-.why-intro-right{padding-top:60px;font-size:17px;line-height:1.55}
-.why-main{margin-top:98px;display:grid;grid-template-columns:578px 1fr;gap:94px;position:relative}
-.why-copy p{font-size:16px;line-height:1.6;margin:0 0 24px}
-.why-copy .btn{margin-top:24px}
-.mosaic{display:grid;grid-template-columns:236px 346px;grid-template-rows:260px 198px;gap:26px 24px;transform:translateY(-3px)}
-.mosaic figure{margin:0;overflow:hidden}
-.mosaic figure:nth-child(1){grid-column:1;grid-row:1}
-.mosaic figure:nth-child(2){grid-column:1;grid-row:2}
-.mosaic figure:nth-child(3){grid-column:2;grid-row:1/3}
-.mosaic img{width:100%;height:100%;object-fit:cover}
+/* WHY CHOOSE US */
+.about{padding:100px 0 94px}
+.about-intro{display:grid;grid-template-columns:612px 488px;justify-content:space-between;align-items:end}
+.about-intro h2{font:400 62px/.98 var(--serif);letter-spacing:-.03em;margin:20px 0 0}
+.about-intro p{margin:0 0 14px;font-size:16px;line-height:1.55}
+.about-body{display:grid;grid-template-columns:578px 606px;justify-content:space-between;align-items:start;margin-top:76px}
+.about-copy{padding-top:89px}
+.about-copy p{margin:0 0 26px;font-size:16px;line-height:1.65}
+.about-copy .btn{margin-top:28px}
+.about-images{width:606px;height:530px;display:grid;grid-template-columns:236px 346px;grid-template-rows:260px 198px;gap:26px 24px}
+.about-images .a1{grid-column:1;grid-row:1}
+.about-images .a2{grid-column:1;grid-row:2}
+.about-images .a3{grid-column:2;grid-row:1/3}
+.about-images img{width:100%;height:100%;object-fit:cover}
 
-/* CLIENT LOGOS */
-.trust{padding:56px 0 99px}
-.trust-title{text-align:center;font-size:10px;letter-spacing:.48em;text-transform:uppercase;margin-bottom:18px}
+/* CLIENT MARQUEE */
+.trust{padding:0 0 104px}
+.trust-title{text-align:center;margin-bottom:18px;font-size:10px;letter-spacing:.48em;text-transform:uppercase}
 .logo-window{width:100%;overflow:hidden}
-.logo-track{display:flex;width:max-content;animation:clientMarquee 52s linear infinite;will-change:transform}
-.client-logo{width:213px;height:205px;border:1px solid var(--line);border-right:0;background:#fff;display:grid;place-items:center}
+.logo-track{display:flex;will-change:transform}
+.client-logo{flex:0 0 16.666666%;height:205px;border:1px solid var(--line);border-right:0;display:grid;place-items:center;background:#fff}
 .client-logo:nth-child(6n){border-right:1px solid var(--line)}
-.client-logo img{max-width:78%;max-height:52px;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:.72;pointer-events:none;-webkit-user-drag:none}
-@keyframes clientMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.client-logo img{max-width:78%;max-height:58px;width:auto;height:auto;object-fit:contain;filter:grayscale(1);opacity:.72;pointer-events:none;-webkit-user-drag:none;user-select:none}
 
-/* BENEFITS */
-.benefits-stage{height:1850px;position:relative;background:#d7e6ed}
-.benefits-sticky{position:sticky;top:0;height:924px;overflow:hidden}
-.benefit-panel{position:absolute;inset:0;background:#d7e6ed;will-change:transform,opacity}
-.benefit-panel.second{transform:translateY(100%)}
-.benefit-photo{position:absolute;left:45%;top:81px;width:55%;height:762px;overflow:hidden}
-.benefit-photo img{width:100%;height:100%;object-fit:cover}
-.benefit-content{position:absolute;left:max(81px,calc((100% - 1278px)/2));top:117px;width:621px;height:690px;background:#fff;padding:42px 60px}
-.benefit-content h2{font-size:56px;line-height:1.08;margin:0 0 38px}
-.benefit-item{margin-bottom:24px}
-.benefit-item strong{display:block;color:var(--teal);font-size:15px;text-transform:uppercase;margin-bottom:4px}
-.benefit-item p{margin:0;font-size:15px;line-height:1.65}
-.benefit-content .btn{margin-top:22px}
+/* BENEFITS SCROLL */
+.benefits-stage{height:185vh;position:relative}
+.benefits-sticky{position:sticky;top:0;height:100vh;min-height:720px;overflow:hidden}
+.benefit-panel{position:absolute;inset:0;display:flex;align-items:center;will-change:transform,opacity}
+.benefit-panel.client{background:#d5e6ee}
+.benefit-panel.society{background:#367b94;transform:translateY(100%)}
+.benefit-inner{width:min(var(--content),calc(100% - 48px));height:min(762px,82vh);margin:0 auto;position:relative}
+.benefit-photo{position:absolute;right:0;top:0;width:711px;height:100%;object-fit:cover}
+.benefit-card{position:absolute;left:0;top:36px;width:621px;min-height:690px;background:#fff;padding:48px 60px 54px;z-index:2}
+.benefit-card h2{font:400 58px/.95 var(--serif);letter-spacing:-.03em;margin:0 0 42px}
+.benefit-item{margin-bottom:27px}
+.benefit-item h4{color:var(--teal);font-size:15px;line-height:1.35;text-transform:uppercase;margin:0 0 6px}
+.benefit-item p{font-size:15px;line-height:1.55;margin:0}
+.benefit-card .btn{margin-top:18px}
 
 /* ROLE */
-.role{padding:104px 0 0;text-align:center}
-.role .kicker{justify-content:center}
-.role .kicker:before{content:"";width:30px;height:1px;background:currentColor;opacity:.75}
-.role h2{font-size:60px;line-height:1.1;margin:14px auto 32px;max-width:740px}
-.role-sub{width:520px;margin:0 auto;font-size:16px;line-height:1.6}
-.role-media{position:relative;width:1017px;height:599px;margin:76px auto 0}
+.role{padding:104px 0 90px;background:#fff;text-align:center}
+.role-intro{width:760px;margin:0 auto}
+.role-intro h2{font:400 62px/.98 var(--serif);letter-spacing:-.03em;margin:20px 0 34px}
+.role-intro p{width:520px;margin:0 auto;font-size:16px;line-height:1.55}
+.role-media{width:1017px;height:599px;margin:70px auto 0;position:relative}
 .role-media img{width:100%;height:100%;object-fit:cover}
-.play{position:absolute;left:50%;top:50%;width:100px;height:100px;transform:translate(-50%,-50%);background:#ff4b0f;display:grid;place-items:center;color:#fff;font-size:34px}
-
-/* STATS */
-.stats{padding:84px 0 104px}
-.stats-row{display:grid;grid-template-columns:repeat(4,1fr);align-items:end}
-.stat{text-align:center;position:relative}
-.stat:not(:last-child):after{content:"";position:absolute;right:-10px;top:50%;width:20px;height:20px;background:#dce6eb;border-radius:3px;transform:translateY(-50%)}
-.stat strong{display:block;font:600 76px/1 "Roboto Serif",serif;color:var(--teal)}
-.stat span{display:block;margin-top:12px;font:400 20px/1.4 "DM Sans",sans-serif}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100px;height:100px;border:0;background:#ff4d0f;color:#fff;font-size:28px;display:grid;place-items:center;cursor:pointer}
+.trustbar{width:min(var(--content),calc(100% - 48px));margin:100px auto 0;display:grid;grid-template-columns:repeat(4,1fr);align-items:center}
+.metric{position:relative;text-align:left}
+.metric:not(:last-child):after{content:"";position:absolute;right:28px;top:50%;width:20px;height:20px;background:#dbe6eb;border-radius:3px;transform:translateY(-50%)}
+.metric strong{display:block;font:500 78px/.9 var(--serif);color:var(--teal);letter-spacing:-.04em}
+.metric span{display:block;margin-top:13px;font:400 22px/1.2 var(--serif);color:var(--ink)}
 
 /* TESTIMONIALS */
-.testimonials{background:#dbe8ee;padding:79px 0 80px}
-.test-intro{display:grid;grid-template-columns:612px 1fr;gap:178px}
-.test-intro-right{padding-top:60px;font-size:16px;line-height:1.55}
-.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:64px}
-.test-card{background:#fff;height:445px;padding:36px 40px 38px;display:flex;flex-direction:column}
-.quote-mark{font:600 68px/1 "Roboto Serif",serif;color:var(--teal);height:55px}
-.test-card p{font-size:16px;line-height:1.6;margin:0;flex:1}
-.person{display:flex;align-items:center;gap:14px}
+.testimonials{background:var(--ice);padding:80px 0 80px}
+.section-intro{display:grid;grid-template-columns:612px 488px;justify-content:space-between;align-items:center}
+.section-intro h2{font:400 62px/.98 var(--serif);letter-spacing:-.03em;margin:20px 0 0}
+.section-intro p{font-size:16px;line-height:1.55;margin:0}
+.test-cards{display:grid;grid-template-columns:repeat(3,416px);gap:15px;margin-top:60px}
+.test-card{height:445px;background:#fff;padding:40px;display:flex;flex-direction:column}
+.quote-mark{font:500 54px/.6 var(--serif);color:var(--teal);margin:0 0 28px}
+.test-card blockquote{font-size:15px;line-height:1.65;margin:0}
+.person{display:flex;align-items:center;gap:14px;margin-top:auto}
 .person img{width:69px;height:69px;border-radius:50%;object-fit:cover}
-.person strong{display:block;font-size:17px}
-.person small{font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-.test-slider{width:515px;height:3px;background:rgba(48,105,128,.2);margin:54px auto 0;position:relative}
-.test-slider:after{content:"";position:absolute;left:0;top:0;width:178px;height:3px;background:var(--teal)}
+.person strong{display:block;font-size:15px}
+.person small{font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.test-progress{width:515px;height:3px;background:#b8ccd6;margin:54px auto 0;position:relative}
+.test-progress:after{content:"";position:absolute;left:0;top:0;width:178px;height:3px;background:var(--teal)}
 
 /* NEWS */
-.news{padding:88px 0 0}
-.news-intro{display:grid;grid-template-columns:612px 1fr;gap:178px}
-.news-intro-right{padding-top:60px}
-.news-intro-right p{font-size:16px;line-height:1.6;margin:0 0 28px}
-.news-grid{display:grid;grid-template-columns:616px 616px;gap:46px;margin-top:78px}
-.news-large,.news-small{border:1px solid var(--line);background:#fff}
-.news-large figure{height:307px;margin:0;overflow:hidden}
-.news-large figure img{width:100%;height:100%;object-fit:cover}
-.news-body{padding:25px}
-.cat{color:var(--teal);font-weight:700;font-size:15px}
-.news-body h3{font:500 30px/1.18 "Roboto Serif",serif;margin:9px 0 9px}
-.news-body p{font-size:15px;line-height:1.55;margin:0 0 25px}
-.date{color:#8eb0bf;font-weight:700}
-.news-stack{display:flex;flex-direction:column;gap:44px}
-.news-small{height:257px;display:grid;grid-template-columns:251px 1fr}
-.news-small figure{margin:0;overflow:hidden}
-.news-small figure img{width:100%;height:100%;object-fit:cover}
-.news-small .news-body{padding:25px 24px}
-.news-small h3{font-size:24px}
-.news-small p{margin-bottom:12px}
+.news{padding:86px 0 104px}
+.news .section-intro{align-items:end}
+.news-action{margin-top:22px}
+.news-grid{display:grid;grid-template-columns:616px 616px;gap:46px;margin-top:79px}
+.feature-story,.side-story{border:1px solid var(--line);background:#fff}
+.feature-story .story-media{width:100%;height:307px;object-fit:cover}
+.story-body{padding:24px 25px}
+.story-cat{font-weight:600;color:var(--teal);font-size:14px}
+.story-body h3{font:500 32px/1.08 var(--serif);margin:8px 0 10px}
+.story-body p{font-size:15px;line-height:1.55;margin:0 0 22px}
+.story-date{font-size:14px;font-weight:600;color:#8aaabd}
+.side-stories{display:flex;flex-direction:column;gap:44px}
+.side-story{height:257px;display:grid;grid-template-columns:251px 1fr}
+.side-story img{width:251px;height:255px;object-fit:cover}
+.side-story .story-body{padding:25px 25px 20px}
+.side-story h3{font-size:26px}
+.side-story p{font-size:14px;line-height:1.5;margin-bottom:12px}
 
 /* CTA */
-.cta{margin:144px auto 105px;width:min(1278px,calc(100% - 80px));height:353px;background:#dbe8ee;text-align:center;padding-top:56px}
-.cta .kicker{justify-content:center}
-.cta .kicker:before{content:"";width:30px;height:1px;background:currentColor;opacity:.75}
-.cta h2{font-size:58px;line-height:1.12;margin:16px auto 34px;max-width:650px}
-.cta-actions{display:flex;justify-content:center;gap:14px}
+.cta{padding:0 0 105px}
+.cta-box{height:353px;background:var(--ice);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.cta-box .eyebrow{display:flex;align-items:center;gap:12px}
+.cta-box .eyebrow:before,.cta-box .eyebrow:after{content:"";width:30px;height:1px;background:var(--teal)}
+.cta-box h2{font:400 62px/.98 var(--serif);letter-spacing:-.03em;margin:25px 0 36px}
+.cta-buttons{display:flex;gap:14px}
 
 /* FOOTER */
-.footer{height:228px;background:#071d37;color:rgba(255,255,255,.62);position:relative;overflow:hidden}
-.footer-watermark{position:absolute;left:-26px;bottom:-34px;width:482px;opacity:.06}
-.footer-inner{position:relative;width:min(897px,calc(100% - 543px));margin-left:auto;margin-right:81px;height:100%}
-.powered{position:absolute;left:0;top:68px;font-size:12px}
-.socials{position:absolute;right:0;top:50px;display:flex;gap:14px}
-.socials span{width:32px;height:32px;border:1px solid rgba(255,255,255,.6);border-radius:3px;display:grid;place-items:center;font-size:13px}
-.footer-line{position:absolute;left:0;right:0;top:111px;height:1px;background:rgba(147,178,194,.35)}
-.footer-bottom{position:absolute;left:0;right:0;top:141px;display:flex;justify-content:space-between;align-items:center;font-size:12px}
-.footer-links{display:flex;gap:28px}
+.footer{height:228px;background:var(--navy);color:rgba(255,255,255,.6);position:relative;overflow:hidden}
+.footer-ghost{position:absolute;left:-26px;bottom:-4px;width:482px;height:202px;opacity:.08}
+.footer-ghost img{width:100%;height:100%;object-fit:contain;object-position:left bottom;filter:grayscale(1) brightness(2.2)}
+.footer-inner{width:min(897px,calc(100% - 96px));margin-left:auto;margin-right:81px;padding-top:49px;position:relative;z-index:2}
+.footer-top{display:flex;justify-content:space-between;align-items:center}
+.powered{font-size:12px}.powered a{text-decoration:underline}
+.social{display:flex;gap:14px}
+.social a{width:32px;height:32px;border:1px solid rgba(255,255,255,.6);border-radius:3px;display:grid;place-items:center;font-size:12px}
+.footer-bottom{margin-top:28px;border-top:1px solid rgba(147,178,194,.35);padding-top:31px;display:flex;justify-content:space-between;gap:30px;font-size:12px}
+.footer-links{display:flex;gap:30px;white-space:nowrap}
 
 /* RESPONSIVE */
-@media(max-width:1180px){
-  .container{width:calc(100% - 48px)}
-  .nav{gap:16px;font-size:12px}
-  .nav .talk{width:138px}
-  .hero-carousel{left:auto;right:-24px;width:600px}
-  .mosaic{grid-template-columns:210px 310px}
-  .news-grid{grid-template-columns:1fr 1fr}
+@media(max-width:1200px){
+ .nav{gap:18px;font-size:12px}.nav .talk{width:135px}.hero-carousel{left:58%;width:720px}
+ .about-intro,.section-intro{grid-template-columns:1fr 38%;gap:50px}.about-body{grid-template-columns:45% 52%}.about-images{width:100%}
+ .benefit-photo{width:57%}.benefit-card{width:49%}.test-cards{grid-template-columns:repeat(3,1fr)}.news-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:900px){
-  .hero{height:780px}
-  .header{top:28px}
-  .nav .nav-link:not(.talk){display:none}
-  .brand,.brand img{width:170px}
-  .hero-copy{top:190px;width:100%}
-  .hero h1{font-size:45px;line-height:1.12}
-  .hero-copy p{width:min(520px,100%)}
-  .hero-carousel{left:58px;right:auto;top:555px;width:calc(100% - 58px)}
-  .hero-viewport{width:100%}
-  .scroll-cue{left:0}
-  .why-intro,.why-main,.test-intro,.news-intro{grid-template-columns:1fr;gap:30px}
-  .why-intro-right,.test-intro-right,.news-intro-right{padding-top:0}
-  .why-main{margin-top:60px}
-  .mosaic{grid-template-columns:1fr 1.35fr;width:100%}
-  .trust{padding-top:70px}
-  .client-logo{width:180px;height:170px}
-  .benefits-stage{height:auto}
-  .benefits-sticky{position:relative;height:auto;overflow:visible}
-  .benefit-panel,.benefit-panel.second{position:relative;transform:none!important;opacity:1!important;height:auto;padding:40px 0}
-  .benefit-photo{position:relative;left:auto;top:auto;width:calc(100% - 48px);height:420px;margin:0 auto}
-  .benefit-content{position:relative;left:auto;top:auto;width:calc(100% - 48px);height:auto;margin:-70px auto 0;padding:36px;z-index:2}
-  .benefit-content h2{font-size:44px}
-  .role h2,.why h2,.section-title,.cta h2{font-size:44px}
-  .role-sub{width:100%}
-  .role-media{width:100%;height:440px}
-  .stats-row{grid-template-columns:repeat(2,1fr);gap:40px}
-  .stat:nth-child(2):after{display:none}
-  .test-grid{grid-template-columns:1fr}
-  .test-card{height:auto;min-height:400px}
-  .news-grid{grid-template-columns:1fr}
-  .news-small{height:auto;min-height:250px}
-  .footer{height:auto;padding:60px 24px 40px}
-  .footer-inner{width:100%;margin:0;height:auto}
-  .powered,.socials,.footer-line,.footer-bottom{position:relative;left:auto;right:auto;top:auto}
-  .socials{margin:25px 0}.footer-line{margin:25px 0}.footer-bottom{gap:20px;align-items:flex-start;flex-direction:column}
+ .container{width:calc(100% - 32px)}.hero{height:760px}.site-header{top:22px}.brand{width:165px}
+ .nav .nav-link:not(.talk){display:none}.nav .talk{width:132px;margin-left:0}.hero-copy{top:180px;width:100%}.hero h1{font-size:50px}.hero-sub{width:min(100%,520px)}
+ .hero-carousel{left:48px;right:auto;top:auto;bottom:42px;width:calc(100% - 48px)}.hero-progress{width:65%}.hero-card{flex-basis:min(82vw,424px)}
+ .scroll-cue{left:-4px}.about{padding-top:70px}.about-intro,.section-intro{display:block}.about-intro h2,.section-intro h2{font-size:48px}.about-intro p,.section-intro p{margin-top:28px}
+ .about-body{display:block;margin-top:30px}.about-copy{padding-top:0}.about-images{margin-top:50px;width:100%;height:430px;grid-template-columns:40% 56%;grid-template-rows:210px 190px}
+ .client-logo{flex-basis:33.333333%;height:145px}
+ .benefits-stage{height:auto}.benefits-sticky{position:relative;height:auto;min-height:0;overflow:visible}.benefit-panel{position:relative;transform:none!important;min-height:820px;padding:40px 0}.benefit-panel.society{transform:none}
+ .benefit-inner{height:auto}.benefit-photo{position:relative;width:100%;height:380px}.benefit-card{position:relative;top:auto;width:92%;margin:-50px auto 0;min-height:0;padding:36px}.benefit-card h2{font-size:46px}
+ .role{padding-top:80px}.role-intro{width:100%}.role-intro h2{font-size:48px}.role-intro p{width:90%}.role-media{width:100%;height:auto;aspect-ratio:1.7}
+ .trustbar{grid-template-columns:1fr 1fr;gap:50px 20px;margin-top:70px}.metric:not(:last-child):after{display:none}.metric strong{font-size:64px}
+ .test-cards{grid-template-columns:1fr}.test-card{height:auto;min-height:390px}.test-progress{width:70%}.news-grid{grid-template-columns:1fr}.side-story{grid-template-columns:40% 60%}
+ .cta-box{height:auto;padding:60px 24px}.cta-box h2{font-size:48px}.cta-buttons{flex-direction:column}
+ .footer{height:auto;min-height:300px}.footer-inner{width:calc(100% - 32px);margin:0 auto;padding:45px 0}.footer-bottom{flex-direction:column}.footer-links{flex-wrap:wrap}
 }
 </style>
 </head>
 <body>
-<div class="site">
 
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="container">
-    <header class="header">
-      <a class="brand" href="#"><img src="/brand/bwv-logo-white.svg" alt="BWV Business & Tax Advisors"></a>
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <header class="site-header">
+      <a class="brand" href="#home"><img src="/brand/bwv-logo-white.svg" alt="BWV Business & Tax Advisors"></a>
       <nav class="nav">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#home">Home</a>
         <a class="nav-link" href="#about">About Us</a>
-        <a class="nav-link" href="#services">Services <span class="chevron"></span></a>
+        <a class="nav-link has-dropdown" href="#services">Services <span class="chev" aria-hidden="true"></span></a>
         <a class="nav-link" href="#news">News & Reports</a>
         <a class="nav-link" href="#media">Media</a>
         <a class="nav-link" href="#join">Join Us</a>
@@ -246,34 +217,30 @@ url("https://www.figma.com/api/mcp/asset/3c45eb6e-79a3-4420-8493-7bb3d91f45e0/00
     </header>
 
     <div class="hero-copy">
-      <h1 class="serif">We are a professional team of accountants</h1>
-      <p>working with enthusiasm and always focused on meeting our clients expectations.</p>
+      <h1>We are a professional<br>team of accountants</h1>
+      <p class="hero-sub">working with enthusiasm and always focused on meeting our clients expectations.</p>
       <a class="btn" href="#about">Learn More <span class="arrow">↗</span></a>
     </div>
 
     <div class="scroll-cue" aria-hidden="true">
-      <div class="scroll-word">Scroll</div>
-      <div class="scroll-line"></div>
+      <div class="scroll-label">Scroll</div><div class="scroll-rule"></div>
     </div>
 
     <div class="hero-carousel">
-      <div class="hero-progress" id="heroProgress"><div class="hero-progress-fill" id="heroProgressFill"></div></div>
-      <div class="hero-viewport" id="heroCarousel">
+      <div class="hero-progress" id="heroProgress"><div class="rail"></div><div class="fill" id="heroProgressFill"></div></div>
+      <div class="hero-viewport" id="heroViewport">
         <div class="hero-track">
           <article class="hero-card">
-            <div class="hero-card-bg"></div>
-            <div class="hero-card-img"><img src="https://www.figma.com/api/mcp/asset/3c45eb6e-79a3-4420-8493-7bb3d91f45e0/f950e.png" alt=""></div>
+            <div class="hero-card-media"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/e2411a70-f3fb-4a4b-85de-9cbc7c9532a3.png" alt=""></div>
             <div class="hero-card-copy"><h3>Lorem ipsum...</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
           </article>
           <article class="hero-card">
-            <div class="hero-card-bg"></div>
-            <div class="hero-card-img"><img src="https://www.figma.com/api/mcp/asset/3c45eb6e-79a3-4420-8493-7bb3d91f45e0/1ecc2.png" alt=""></div>
+            <div class="hero-card-media"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/e2411a70-f3fb-4a4b-85de-9cbc7c9532a3.png" alt=""></div>
             <div class="hero-card-copy"><h3>Lorem ipsum</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
           </article>
           <article class="hero-card">
-            <div class="hero-card-bg"></div>
-            <div class="hero-card-img"><img src="https://www.figma.com/api/mcp/asset/3c45eb6e-79a3-4420-8493-7bb3d91f45e0/f950e.png" alt=""></div>
-            <div class="hero-card-copy"><h3>Lorem ipsum...</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
+            <div class="hero-card-media"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/e2411a70-f3fb-4a4b-85de-9cbc7c9532a3.png" alt=""></div>
+            <div class="hero-card-copy"><h3>Lorem ipsum</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
           </article>
         </div>
       </div>
@@ -281,55 +248,60 @@ url("https://www.figma.com/api/mcp/asset/3c45eb6e-79a3-4420-8493-7bb3d91f45e0/00
   </div>
 </section>
 
-<section class="why" id="about">
+<section class="about" id="about">
   <div class="container">
-    <div class="why-intro">
-      <div><div class="kicker">Why choose us</div><h2 class="serif">We want our clients to be successful</h2></div>
-      <div class="why-intro-right">We are passionate about our work, and we believe the value we create benefits not only our clients, but society as a whole.</div>
+    <div class="about-intro">
+      <div>
+        <div class="eyebrow line">WHY CHOOSE US</div>
+        <h2>We want our clients to be<br>successful</h2>
+      </div>
+      <p>We are passionate about our work, and we believe the value we create benefits not only our clients, but society as a whole.</p>
     </div>
-    <div class="why-main">
-      <div class="why-copy">
+
+    <div class="about-body">
+      <div class="about-copy">
         <p>At BWV, we've built a culture of continuous improvement, focused on one goal: exceeding our clients' expectations. As a business consulting firm, we bring commitment, creativity and integrity to every relationship we build.</p>
         <p>We believe in bringing the best of ourselves and our partners to every client, in having the freedom to think outside the box, and in being an honest, trustworthy partner to our clients, our colleagues and the communities we serve.</p>
         <a class="btn" href="#">Learn More <span class="arrow">↗</span></a>
       </div>
-      <div class="mosaic">
-        <figure><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/319cd.png" alt=""></figure>
-        <figure><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/647f1.png" alt=""></figure>
-        <figure><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/ef7ed.png" alt=""></figure>
+      <div class="about-images">
+        <img class="a1" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/21b22dc4-ca2e-4e02-abc4-ed5eeba76120.png" alt="">
+        <img class="a2" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/e1c3ac92-5fea-4bd0-8edf-932338807d6d.png" alt="">
+        <img class="a3" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/f82b3112-5070-4e7c-8c7d-1bec55719b47.png" alt="">
       </div>
     </div>
-  </div>
-</section>
 
-<section class="trust">
-  <div class="container">
-    <div class="trust-title">Companies that trust us</div>
+    <div class="trust-title">COMPANIES THAT TRUST US</div>
     <div class="logo-window">
-      <div class="logo-track"><div class="client-logo"><img src="/clients/racc.svg" alt="RACC"></div><div class="client-logo"><img src="/clients/cariuma.jpg" alt="Cariuma"></div><div class="client-logo"><img src="/clients/viz.svg" alt="VIZ"></div><div class="client-logo"><img src="/clients/upwork.webp" alt="Upwork"></div><div class="client-logo"><img src="/clients/arcserve.svg" alt="Arcserve"></div><div class="client-logo"><img src="/clients/iles-paul-ricard.jpg" alt="Les Îles Paul Ricard"></div><div class="client-logo"><img src="/clients/singlestore.png" alt="SingleStore"></div><div class="client-logo"><img src="/clients/salsify.jpeg" alt="Salsify"></div><div class="client-logo"><img src="/clients/polytan.svg" alt="Polytan"></div><div class="client-logo"><img src="/clients/netlify.png" alt="Netlify"></div><div class="client-logo"><img src="/clients/lectra.svg" alt="Lectra"></div><div class="client-logo"><img src="/clients/forescout.jpg" alt="Forescout"></div><div class="client-logo"><img src="/clients/leonardo-hotels.png" alt="Leonardo Hotels"></div><div class="client-logo"><img src="/clients/classpass.svg" alt="ClassPass"></div><div class="client-logo"><img src="/clients/champalimaud.png" alt="Champalimaud Foundation"></div><div class="client-logo"><img src="/clients/1worldsync.webp" alt="1WorldSync"></div><div class="client-logo"><img src="/clients/apax.png" alt="Apax"></div><div class="client-logo"><img src="/clients/labelys.png" alt="Labelys Group"></div><div class="client-logo"><img src="/clients/causeway.svg" alt="Causeway"></div><div class="client-logo"><img src="/clients/autodesk.webp" alt="Autodesk"></div><div class="client-logo"><img src="/clients/docmorris.png" alt="DocMorris"></div><div class="client-logo"><img src="/clients/pagerduty.png" alt="PagerDuty"></div><div class="client-logo"><img src="/clients/xiaomi.png" alt="Xiaomi"></div><div class="client-logo"><img src="/clients/athena.png" alt="Athena Advisers"></div><div class="client-logo"><img src="/clients/psianimal.png" alt="PSI Animal"></div><div class="client-logo"><img src="/clients/smeg.png" alt="SMEG"></div><div class="client-logo"><img src="/clients/roadis.png" alt="Roadis"></div><div class="client-logo"><img src="/clients/magnelusa.png" alt="Magnelusa"></div><div class="client-logo"><img src="/clients/ypo.png" alt="YPO"></div><div class="client-logo"><img src="/clients/racc.svg" alt="RACC"></div><div class="client-logo"><img src="/clients/cariuma.jpg" alt="Cariuma"></div><div class="client-logo"><img src="/clients/viz.svg" alt="VIZ"></div><div class="client-logo"><img src="/clients/upwork.webp" alt="Upwork"></div><div class="client-logo"><img src="/clients/arcserve.svg" alt="Arcserve"></div><div class="client-logo"><img src="/clients/iles-paul-ricard.jpg" alt="Les Îles Paul Ricard"></div><div class="client-logo"><img src="/clients/singlestore.png" alt="SingleStore"></div><div class="client-logo"><img src="/clients/salsify.jpeg" alt="Salsify"></div><div class="client-logo"><img src="/clients/polytan.svg" alt="Polytan"></div><div class="client-logo"><img src="/clients/netlify.png" alt="Netlify"></div><div class="client-logo"><img src="/clients/lectra.svg" alt="Lectra"></div><div class="client-logo"><img src="/clients/forescout.jpg" alt="Forescout"></div><div class="client-logo"><img src="/clients/leonardo-hotels.png" alt="Leonardo Hotels"></div><div class="client-logo"><img src="/clients/classpass.svg" alt="ClassPass"></div><div class="client-logo"><img src="/clients/champalimaud.png" alt="Champalimaud Foundation"></div><div class="client-logo"><img src="/clients/1worldsync.webp" alt="1WorldSync"></div><div class="client-logo"><img src="/clients/apax.png" alt="Apax"></div><div class="client-logo"><img src="/clients/labelys.png" alt="Labelys Group"></div><div class="client-logo"><img src="/clients/causeway.svg" alt="Causeway"></div><div class="client-logo"><img src="/clients/autodesk.webp" alt="Autodesk"></div><div class="client-logo"><img src="/clients/docmorris.png" alt="DocMorris"></div><div class="client-logo"><img src="/clients/pagerduty.png" alt="PagerDuty"></div><div class="client-logo"><img src="/clients/xiaomi.png" alt="Xiaomi"></div><div class="client-logo"><img src="/clients/athena.png" alt="Athena Advisers"></div><div class="client-logo"><img src="/clients/psianimal.png" alt="PSI Animal"></div><div class="client-logo"><img src="/clients/smeg.png" alt="SMEG"></div><div class="client-logo"><img src="/clients/roadis.png" alt="Roadis"></div><div class="client-logo"><img src="/clients/magnelusa.png" alt="Magnelusa"></div><div class="client-logo"><img src="/clients/ypo.png" alt="YPO"></div></div>
+      <div class="logo-track" id="logoTrack"><div class="client-logo"><img src="/clients/racc.svg" alt="RACC"></div><div class="client-logo"><img src="/clients/cariuma.jpg" alt="Cariuma"></div><div class="client-logo"><img src="/clients/viz.svg" alt="VIZ"></div><div class="client-logo"><img src="/clients/upwork.webp" alt="Upwork"></div><div class="client-logo"><img src="/clients/arcserve.svg" alt="Arcserve"></div><div class="client-logo"><img src="/clients/iles-paul-ricard.jpg" alt="Les Îles Paul Ricard"></div><div class="client-logo"><img src="/clients/singlestore.png" alt="SingleStore"></div><div class="client-logo"><img src="/clients/salsify.jpeg" alt="Salsify"></div><div class="client-logo"><img src="/clients/polytan.svg" alt="Polytan"></div><div class="client-logo"><img src="/clients/netlify.png" alt="Netlify"></div><div class="client-logo"><img src="/clients/lectra.svg" alt="Lectra"></div><div class="client-logo"><img src="/clients/forescout.jpg" alt="Forescout"></div><div class="client-logo"><img src="/clients/leonardo-hotels.png" alt="Leonardo Hotels"></div><div class="client-logo"><img src="/clients/classpass.svg" alt="ClassPass"></div><div class="client-logo"><img src="/clients/champalimaud.png" alt="Champalimaud Foundation"></div><div class="client-logo"><img src="/clients/1worldsync.webp" alt="1WorldSync"></div><div class="client-logo"><img src="/clients/apax.png" alt="Apax"></div><div class="client-logo"><img src="/clients/labelys.png" alt="Labelys Group"></div><div class="client-logo"><img src="/clients/causeway.svg" alt="Causeway"></div><div class="client-logo"><img src="/clients/autodesk.webp" alt="Autodesk"></div><div class="client-logo"><img src="/clients/docmorris.png" alt="DocMorris"></div><div class="client-logo"><img src="/clients/pagerduty.png" alt="PagerDuty"></div><div class="client-logo"><img src="/clients/xiaomi.png" alt="Xiaomi"></div><div class="client-logo"><img src="/clients/athena.png" alt="Athena Advisers"></div><div class="client-logo"><img src="/clients/psianimal.png" alt="PSI Animal"></div><div class="client-logo"><img src="/clients/smeg.png" alt="SMEG"></div><div class="client-logo"><img src="/clients/roadis.png" alt="Roadis"></div><div class="client-logo"><img src="/clients/magnelusa.png" alt="Magnelusa"></div><div class="client-logo"><img src="/clients/ypo.png" alt="Young Presidents' Organization"></div><div class="client-logo"><img src="/clients/racc.svg" alt="RACC"></div><div class="client-logo"><img src="/clients/cariuma.jpg" alt="Cariuma"></div><div class="client-logo"><img src="/clients/viz.svg" alt="VIZ"></div><div class="client-logo"><img src="/clients/upwork.webp" alt="Upwork"></div><div class="client-logo"><img src="/clients/arcserve.svg" alt="Arcserve"></div><div class="client-logo"><img src="/clients/iles-paul-ricard.jpg" alt="Les Îles Paul Ricard"></div><div class="client-logo"><img src="/clients/singlestore.png" alt="SingleStore"></div><div class="client-logo"><img src="/clients/salsify.jpeg" alt="Salsify"></div><div class="client-logo"><img src="/clients/polytan.svg" alt="Polytan"></div><div class="client-logo"><img src="/clients/netlify.png" alt="Netlify"></div><div class="client-logo"><img src="/clients/lectra.svg" alt="Lectra"></div><div class="client-logo"><img src="/clients/forescout.jpg" alt="Forescout"></div><div class="client-logo"><img src="/clients/leonardo-hotels.png" alt="Leonardo Hotels"></div><div class="client-logo"><img src="/clients/classpass.svg" alt="ClassPass"></div><div class="client-logo"><img src="/clients/champalimaud.png" alt="Champalimaud Foundation"></div><div class="client-logo"><img src="/clients/1worldsync.webp" alt="1WorldSync"></div><div class="client-logo"><img src="/clients/apax.png" alt="Apax"></div><div class="client-logo"><img src="/clients/labelys.png" alt="Labelys Group"></div><div class="client-logo"><img src="/clients/causeway.svg" alt="Causeway"></div><div class="client-logo"><img src="/clients/autodesk.webp" alt="Autodesk"></div><div class="client-logo"><img src="/clients/docmorris.png" alt="DocMorris"></div><div class="client-logo"><img src="/clients/pagerduty.png" alt="PagerDuty"></div><div class="client-logo"><img src="/clients/xiaomi.png" alt="Xiaomi"></div><div class="client-logo"><img src="/clients/athena.png" alt="Athena Advisers"></div><div class="client-logo"><img src="/clients/psianimal.png" alt="PSI Animal"></div><div class="client-logo"><img src="/clients/smeg.png" alt="SMEG"></div><div class="client-logo"><img src="/clients/roadis.png" alt="Roadis"></div><div class="client-logo"><img src="/clients/magnelusa.png" alt="Magnelusa"></div><div class="client-logo"><img src="/clients/ypo.png" alt="Young Presidents' Organization"></div></div>
     </div>
   </div>
 </section>
 
 <section class="benefits-stage" id="services">
   <div class="benefits-sticky">
-    <div class="benefit-panel first" id="benefitOne">
-      <div class="benefit-photo"><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/c9abd.png" alt=""></div>
-      <div class="benefit-content">
-        <h2 class="serif">Benefits to our clients</h2>
-        <div class="benefit-item"><strong>☑ Minimising tax compliance costs</strong><p>This can be achieved through accurate and timely filing in of tax returns, and the compliance of legal accounting and administrative procedures, thus avoiding tax penalties and late payment interests that could otherwise occur.</p></div>
-        <div class="benefit-item"><strong>☑ Taking advantage of tax incentives and other benefits</strong><p>Examples: helping our clients to recover VAT not collected from bad debts and assisting our clients to choose the correct location to manage their operations.</p></div>
-        <a class="btn" href="#contact">Talk to Us <span class="arrow">↗</span></a>
+    <div class="benefit-panel client" id="benefitClient">
+      <div class="benefit-inner">
+        <img class="benefit-photo" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/97d3749b-ad6f-41ab-b093-382c62dc4f4a.png" alt="">
+        <div class="benefit-card">
+          <h2>Benefits to our<br>clients</h2>
+          <div class="benefit-item"><h4>☑ Minimising tax compliance costs</h4><p>This can be achieved through accurate and timely filling in of tax returns, and the compliance of legal accounting and administrative procedures, thus avoiding tax penalties and late payment interests that could otherwise occur.</p></div>
+          <div class="benefit-item"><h4>☑ Taking advantage of tax incentives and other benefits</h4><p>Examples: (1) Helping our clients to recover VAT not collected from bad debts. (2) Assisting our clients to choose the correct location to manage their operations.</p></div>
+          <a class="btn" href="#contact">Talk to Us <span class="arrow">↗</span></a>
+        </div>
       </div>
     </div>
-    <div class="benefit-panel second" id="benefitTwo">
-      <div class="benefit-photo"><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/6f0ba.png" alt=""></div>
-      <div class="benefit-content">
-        <h2 class="serif">Benefits to society in general</h2>
-        <div class="benefit-item"><strong>☑ When a company invests</strong><p>for instance in a low income jurisdiction, the local population benefits from that investment.</p></div>
-        <div class="benefit-item"><strong>☑ By guiding businesses</strong><p>to take advantage of tax initiatives, we are helping with the local government's objectives of attracting investment and development.</p></div>
-        <div class="benefit-item"><strong>☑ By helping individuals</strong><p>especially those moving to Portugal, we help them understand the tax framework and available incentives.</p></div>
-        <a class="btn" href="#contact">Talk to Us <span class="arrow">↗</span></a>
+
+    <div class="benefit-panel society" id="benefitSociety">
+      <div class="benefit-inner">
+        <img class="benefit-photo" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/e87ac769-b530-4296-98fa-e382a94bec90.png" alt="">
+        <div class="benefit-card">
+          <h2>Benefits to society<br>in general</h2>
+          <div class="benefit-item"><h4>☑ When a company invests</h4><p>for instance in a low income jurisdiction, the local population benefits from that investment.</p></div>
+          <div class="benefit-item"><h4>☑ By guiding businesses</h4><p>to take advantage of tax initiatives, we are helping with the local government’s objectives of attracting investment and development.</p></div>
+          <div class="benefit-item"><h4>☑ By helping individuals</h4><p>especially the retired from northern Europe, to move to Portugal and take advantage of the “Regime for Non-Habitual Residents”.</p></div>
+          <a class="btn" href="#contact">Talk to Us <span class="arrow">↗</span></a>
+        </div>
       </div>
     </div>
   </div>
@@ -337,108 +309,109 @@ url("https://www.figma.com/api/mcp/asset/3c45eb6e-79a3-4420-8493-7bb3d91f45e0/00
 
 <section class="role" id="media">
   <div class="container">
-    <div class="kicker">The role of an accountant</div>
-    <h2 class="serif">More than numbers.<br>A partner in your business.</h2>
-    <p class="role-sub">Hear directly from our team on how the right accounting partner does more than keep the books helping businesses grow with confidence.</p>
-    <div class="role-media"><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/82f69.png" alt=""><div class="play">▶</div></div>
+    <div class="role-intro">
+      <div class="eyebrow line" style="justify-content:center">THE ROLE OF AN ACCOUNTANT</div>
+      <h2>More than numbers.<br>A partner in your business.</h2>
+      <p>Hear directly from our team on how the right accounting partner does more than keep the books helping businesses grow with confidence.</p>
+    </div>
+    <div class="role-media"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/768f38af-7fce-4f72-b034-9bfb449c712d.png" alt=""><button class="play" aria-label="Play video">▶</button></div>
   </div>
-</section>
 
-<section class="stats">
-  <div class="container stats-row">
-    <div class="stat"><strong>10+</strong><span>Years of Experience</span></div>
-    <div class="stat"><strong>21+</strong><span>Team Members</span></div>
-    <div class="stat"><strong>65%</strong><span>Client Retention</span></div>
-    <div class="stat"><strong>95+</strong><span>Projects Completed</span></div>
+  <div class="trustbar">
+    <div class="metric"><strong>10+</strong><span>Years of Experience</span></div>
+    <div class="metric"><strong>21+</strong><span>Team Members</span></div>
+    <div class="metric"><strong>65%</strong><span>Client Retention</span></div>
+    <div class="metric"><strong>95+</strong><span>Projects Completed</span></div>
   </div>
 </section>
 
 <section class="testimonials">
   <div class="container">
-    <div class="test-intro">
-      <div><div class="kicker">Testimonials</div><h2 class="section-title serif">What our clients say<br>about us</h2></div>
-      <div class="test-intro-right">Hear from the businesses and individuals we've helped navigate tax and accounting with confidence.</div>
+    <div class="section-intro">
+      <div><div class="eyebrow line">TESTIMONIALS</div><h2>What our clients say<br>about us</h2></div>
+      <p>Hear from the businesses and individuals we've helped navigate tax and accounting with confidence.</p>
     </div>
-    <div class="test-grid">
-      <article class="test-card"><div class="quote-mark">“</div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis velit ligula. Sed quis aliquet tortor. Aliquam luctus eleifend lacus, sit amet feugiat ex. Mauris a turpis et nisi rhoncus fringilla ac ullamcorper lorem.</p><div class="person"><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/872ec.png" alt=""><div><strong>Nome Completo</strong><small>Cargo, empresa</small></div></div></article>
-      <article class="test-card"><div class="quote-mark">“</div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis velit ligula. Sed quis aliquet tortor. Aliquam luctus eleifend lacus, sit amet feugiat ex. Mauris a turpis et nisi rhoncus fringilla ac ullamcorper lorem.</p><div class="person"><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/33a29.png" alt=""><div><strong>Nome Completo</strong><small>Cargo, empresa</small></div></div></article>
-      <article class="test-card"><div class="quote-mark">“</div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis velit ligula. Sed quis aliquet tortor. Aliquam luctus eleifend lacus, sit amet feugiat ex. Mauris a turpis et nisi rhoncus fringilla ac ullamcorper lorem.</p><div class="person"><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/d08fc.png" alt=""><div><strong>Nome Completo</strong><small>Cargo, empresa</small></div></div></article>
+    <div class="test-cards">
+      <article class="test-card"><div class="quote-mark">“</div><blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis velit ligula. Sed quis aliquet tortor. Aliquam luctus eleifend lacus, sit amet feugiat ex. Mauris a turpis et nisi rhoncus fringilla ac ullamcorper lorem. Vestibulum ullamcorper ut erat vel feugiat. Sed et mi sit amet arcu finibus fermentum donec.</blockquote><div class="person"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/f9467252-b259-44fc-b60d-558a3fcb1c73.png" alt=""><div><strong>Nome Completo</strong><small>CARGO, EMPRESA</small></div></div></article>
+      <article class="test-card"><div class="quote-mark">“</div><blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis velit ligula. Sed quis aliquet tortor. Aliquam luctus eleifend lacus, sit amet feugiat ex. Mauris a turpis et nisi rhoncus fringilla ac ullamcorper lorem. Vestibulum ullamcorper ut erat vel feugiat. Sed et mi sit amet arcu finibus fermentum donec.</blockquote><div class="person"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/f7989ecb-2eda-421b-99d8-11a87853bb53.png" alt=""><div><strong>Nome Completo</strong><small>CARGO, EMPRESA</small></div></div></article>
+      <article class="test-card"><div class="quote-mark">“</div><blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis velit ligula. Sed quis aliquet tortor. Aliquam luctus eleifend lacus, sit amet feugiat ex. Mauris a turpis et nisi rhoncus fringilla ac ullamcorper lorem. Vestibulum ullamcorper ut erat vel feugiat. Sed et mi sit amet arcu finibus fermentum donec.</blockquote><div class="person"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/0fa6ce99-f6a2-4095-b555-86cf1565f067.png" alt=""><div><strong>Nome Completo</strong><small>CARGO, EMPRESA</small></div></div></article>
     </div>
-    <div class="test-slider"></div>
+    <div class="test-progress"></div>
   </div>
 </section>
 
 <section class="news" id="news">
   <div class="container">
-    <div class="news-intro">
-      <div><div class="kicker">News & Reports</div><h2 class="section-title serif">Latest news, insights & updates</h2></div>
-      <div class="news-intro-right"><p>Stay up to date with the latest tax updates, industry insights and company news to help you make better business decisions.</p><a class="btn" href="#">View All <span class="arrow">↗</span></a></div>
+    <div class="section-intro">
+      <div><div class="eyebrow line">NEWS & REPORTS</div><h2>Latest news, insights &<br>updates</h2></div>
+      <div><p>Stay up to date with the latest tax updates, industry insights and company news to help you make better business decisions.</p><a class="btn news-action" href="#">View All <span class="arrow">↗</span></a></div>
     </div>
+
     <div class="news-grid">
-      <article class="news-large"><figure><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/2f95a.png" alt=""></figure><div class="news-body"><div class="cat">Categoria</div><h3>Lorem ipsum dolor sit amet consect</h3><p>Pellentesque dolor est, molestie at risus ac, elementum congue magna. Phasellus eleifend, massa eu auctor lobortis, justo risus consequat sem vitae vulputate lorem ipsum dolor sit amet...</p><div class="date">27 junho, 2026</div></div></article>
-      <div class="news-stack">
-        <article class="news-small"><figure><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/c7bd5.png" alt=""></figure><div class="news-body"><div class="cat">Categoria</div><h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet elit pellentesque dolor est, molestie at risus ac, elementum congue magna...</p><div class="date">11 janeiro, 2026</div></div></article>
-        <article class="news-small"><figure><img src="https://www.figma.com/api/mcp/asset/2cc15c66-ca4e-4e2b-83e3-3e0f39bfffb3/f1cbc.png" alt=""></figure><div class="news-body"><div class="cat">Categoria</div><h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet elit pellentesque dolor est, molestie at risus ac, elementum congue magna...</p><div class="date">03 janeiro, 2026</div></div></article>
+      <article class="feature-story">
+        <img class="story-media" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/b9b5b475-8020-48ab-ac26-4c3a127c7554.png" alt="">
+        <div class="story-body"><div class="story-cat">Categoria</div><h3>Lorem ipsum dolor sit amet consect</h3><p>Pellentesque dolor est, molestie at risus ac, elementum congue magna. Phasellus eleifend, massa eu auctor lobortis, justo risus consequat sem vitae vulputate lorem ipsum dolor sit amet, consectetur adipiscing elit...</p><div class="story-date">27 junho, 2026</div></div>
+      </article>
+      <div class="side-stories">
+        <article class="side-story"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/761d3233-33ad-42ba-954f-99ec8050a935.png" alt=""><div class="story-body"><div class="story-cat">Categoria</div><h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet elit pellentesque dolor est, molestie at risus ac, elementum congue magna sellus eleifend, massa lorem ipsum...</p><div class="story-date">11 janeiro, 2026</div></div></article>
+        <article class="side-story"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/4c8817e9-9e17-48f8-bcb9-66ecc755ec63.png" alt=""><div class="story-body"><div class="story-cat">Categoria</div><h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet elit pellentesque dolor est, molestie at risus ac, elementum congue magna sellus eleifend, massa lorem ipsum...</p><div class="story-date">03 janeiro, 2026</div></div></article>
       </div>
     </div>
   </div>
 </section>
 
 <section class="cta" id="contact">
-  <div class="kicker">Take the next step</div>
-  <h2 class="serif">Looking for a partner<br>you can trust?</h2>
-  <div class="cta-actions"><a class="btn" href="#">Request a Meeting <span class="arrow">↗</span></a><a class="btn btn-outline" href="#services">Explore our Services <span class="arrow">↗</span></a></div>
+  <div class="container cta-box">
+    <div class="eyebrow">TAKE THE NEXT STEP</div>
+    <h2>Looking for a partner<br>you can trust?</h2>
+    <div class="cta-buttons"><a class="btn" href="#">Request a Meeting <span class="arrow">↗</span></a><a class="btn outline" href="#services">Explore our Services <span class="arrow">↗</span></a></div>
+  </div>
 </section>
 
-<footer class="footer">
-  <img class="footer-watermark" src="/brand/bwv-logo-white.svg" alt="">
+<footer class="footer" id="find">
+  <div class="footer-ghost"><img src="/brand/bwv-logo-white.svg" alt=""></div>
   <div class="footer-inner">
-    <div class="powered">Powered by <u>Blendd</u></div>
-    <div class="socials"><span>f</span><span>𝕏</span><span>in</span><span>◉</span><span>◎</span></div>
-    <div class="footer-line"></div>
-    <div class="footer-bottom"><span>Copyright © 2026 BWV Business & Tax Advisors. All Rights Reserved.</span><div class="footer-links"><span>Terms & Conditions</span><span>Privacy Policy</span><span>Cookie Policy</span></div></div>
+    <div class="footer-top">
+      <div class="powered">Powered by <a href="#">Blendd</a></div>
+      <div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="WhatsApp">◉</a><a href="#" aria-label="Instagram">◎</a></div>
+    </div>
+    <div class="footer-bottom"><span>Copyright © 2026 BWV Business & Tax Advisors. All Rights Reserved.</span><div class="footer-links"><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a><a href="#">Cookie Policy</a></div></div>
   </div>
 </footer>
 
-</div>
-
 <script>
-const viewport=document.getElementById('heroCarousel');
-const track=viewport.querySelector('.hero-track');
-const progress=document.getElementById('heroProgress');
-const progressFill=document.getElementById('heroProgressFill');
-let offset=0,startX=0,startOffset=0,dragging=false;
-function maxOffset(){return Math.max(0,track.scrollWidth-viewport.clientWidth)}
-function renderCarousel(){
-  const max=maxOffset();
-  offset=Math.max(0,Math.min(max,offset));
-  track.style.transform='translate3d('+(-offset)+'px,0,0)';
-  progressFill.style.width=(max?Math.max(178,178+(337*(offset/max))):178)+'px';
-}
-viewport.addEventListener('wheel',e=>{e.preventDefault();offset+=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY*.8:e.deltaX;renderCarousel()},{passive:false});
-viewport.addEventListener('pointerdown',e=>{dragging=true;startX=e.clientX;startOffset=offset;viewport.classList.add('dragging');viewport.setPointerCapture(e.pointerId)});
-viewport.addEventListener('pointermove',e=>{if(!dragging)return;offset=startOffset-(e.clientX-startX);renderCarousel()});
-viewport.addEventListener('pointerup',e=>{dragging=false;viewport.classList.remove('dragging');try{viewport.releasePointerCapture(e.pointerId)}catch(_){}});
-viewport.querySelectorAll('img').forEach(img=>{img.draggable=false;img.addEventListener('dragstart',e=>e.preventDefault())});
-progress.addEventListener('pointerdown',e=>{const r=progress.getBoundingClientRect();offset=maxOffset()*Math.max(0,Math.min(1,(e.clientX-r.left)/r.width));renderCarousel()});
-renderCarousel();
+const heroViewport=document.getElementById('heroViewport');
+const heroTrack=heroViewport.querySelector('.hero-track');
+const heroProgress=document.getElementById('heroProgress');
+const heroFill=document.getElementById('heroProgressFill');
+let hOffset=0,hStartX=0,hStartOffset=0,hDragging=false;
+function heroMax(){return Math.max(0,heroTrack.scrollWidth-heroViewport.clientWidth)}
+function heroRender(){const max=heroMax();hOffset=Math.max(0,Math.min(max,hOffset));heroTrack.style.transform='translate3d('+(-hOffset)+'px,0,0)';heroFill.style.width=(max?hOffset/max*100:0)+'%'}
+heroViewport.addEventListener('wheel',e=>{e.preventDefault();hOffset+=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY*.75:e.deltaX;heroRender()},{passive:false});
+heroViewport.addEventListener('pointerdown',e=>{hDragging=true;hStartX=e.clientX;hStartOffset=hOffset;heroViewport.classList.add('dragging');heroViewport.setPointerCapture(e.pointerId)});
+heroViewport.addEventListener('pointermove',e=>{if(!hDragging)return;hOffset=hStartOffset-(e.clientX-hStartX);heroRender()});
+heroViewport.addEventListener('pointerup',e=>{hDragging=false;heroViewport.classList.remove('dragging');try{heroViewport.releasePointerCapture(e.pointerId)}catch(_){}});
+heroViewport.querySelectorAll('img').forEach(img=>{img.draggable=false;img.addEventListener('dragstart',e=>e.preventDefault())});
+function progressTo(e){const r=heroProgress.getBoundingClientRect();hOffset=heroMax()*Math.max(0,Math.min(1,(e.clientX-r.left)/r.width));heroRender()}
+heroProgress.addEventListener('pointerdown',e=>{heroProgress.setPointerCapture(e.pointerId);progressTo(e)});
+heroProgress.addEventListener('pointermove',e=>{if(heroProgress.hasPointerCapture(e.pointerId))progressTo(e)});
+addEventListener('resize',heroRender);heroRender();
 
-const stage=document.querySelector('.benefits-stage');
-const one=document.getElementById('benefitOne');
-const two=document.getElementById('benefitTwo');
-function benefitsScroll(){
-  if(innerWidth<=900){one.style.transform='';one.style.opacity='';two.style.transform='';two.style.opacity='';return}
-  const r=stage.getBoundingClientRect();
-  const range=stage.offsetHeight-innerHeight;
-  const p=Math.max(0,Math.min(1,-r.top/range));
-  const x=Math.max(0,Math.min(1,(p-.35)/.3));
-  one.style.transform='translateY('+(-x*17)+'%)';
-  one.style.opacity=1-x*.34;
-  two.style.transform='translateY('+((1-x)*100)+'%)';
+const logoTrack=document.getElementById('logoTrack');
+let logoX=0,logoLast=performance.now();const logoSpeed=24;
+function logoLoop(now){const dt=Math.min(50,now-logoLast);logoLast=now;const half=logoTrack.scrollWidth/2;logoX-=logoSpeed*(dt/1000);if(half&&-logoX>=half)logoX+=half;logoTrack.style.transform='translate3d('+logoX+'px,0,0)';requestAnimationFrame(logoLoop)}
+requestAnimationFrame(logoLoop);
+
+const benefits=document.querySelector('.benefits-stage'),panel1=document.getElementById('benefitClient'),panel2=document.getElementById('benefitSociety');
+function benefitScroll(){
+ if(innerWidth<=900){panel1.style.transform='none';panel1.style.opacity=1;panel2.style.transform='none';return}
+ const r=benefits.getBoundingClientRect(),den=Math.max(1,benefits.offsetHeight-innerHeight),p=Math.max(0,Math.min(1,-r.top/den));
+ const x=Math.max(0,Math.min(1,(p-.30)/.42));
+ panel1.style.transform='translate3d(0,'+(-x*12)+'%,0)';
+ panel1.style.opacity=1-x*.42;
+ panel2.style.transform='translate3d(0,'+((1-x)*100)+'%,0)';
 }
-addEventListener('scroll',benefitsScroll,{passive:true});
-addEventListener('resize',()=>{renderCarousel();benefitsScroll()});
-benefitsScroll();
+addEventListener('scroll',benefitScroll,{passive:true});addEventListener('resize',benefitScroll);benefitScroll();
 </script>
 </body>
 </html>
