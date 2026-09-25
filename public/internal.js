@@ -1,0 +1,1 @@
+const io=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('on')})},{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
