@@ -177,3 +177,7 @@ html{scroll-behavior:auto}
  .field-grid,.choice-grid{grid-template-columns:1fr}.form-actions{align-items:flex-start;flex-direction:column}
  .footer{height:auto;min-height:300px}.footer-inner{width:calc(100% - 32px);margin:0 auto;padding:45px 0}.footer-bottom{flex-direction:column}.footer-links{flex-wrap:wrap}
 }
+/* Reduce decorative numbering across internal pages */
+.navy .rail-row.no-index{grid-template-columns:1.05fr 1.4fr 260px}
+.form-section-head.no-step{gap:0}
+@media(max-width:900px){.navy .rail-row.no-index{grid-template-columns:1fr}.navy .rail-row.no-index p{grid-column:1}}
