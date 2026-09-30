@@ -181,3 +181,94 @@ html{scroll-behavior:auto}
 .navy .rail-row.no-index{grid-template-columns:1.05fr 1.4fr 260px}
 .form-section-head.no-step{gap:0}
 @media(max-width:900px){.navy .rail-row.no-index{grid-template-columns:1fr}.navy .rail-row.no-index p{grid-column:1}}
+
+
+/* ABOUT US — immersive culture journey */
+.about-hero .hero-media{background-position:center 42%}
+.about-perspective-img{background:#eef4f7}
+.culture-scroll{height:290vh;position:relative;background:var(--navy);color:#fff}
+.culture-sticky{position:sticky;top:0;height:100vh;min-height:720px;overflow:hidden}
+.culture-track{height:100%;display:flex;will-change:transform}
+.culture-slide{flex:0 0 100vw;height:100%;display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.culture-slide-copy{padding:10vh 8vw 8vh;display:flex;flex-direction:column;justify-content:center}
+.culture-slide-copy .culture-kicker{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#8fc6d8;font-weight:700}
+.culture-slide-copy h3{font:400 clamp(48px,5vw,76px)/.98 Georgia,serif;letter-spacing:-.04em;margin:22px 0 30px;max-width:650px}
+.culture-slide-copy p{font-size:18px;line-height:1.7;color:rgba(255,255,255,.74);max-width:620px;margin:0}
+.culture-slide-media{height:100%;overflow:hidden;position:relative}
+.culture-slide-media img{filter:saturate(.72) contrast(1.03)}
+.culture-slide-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,29,55,.24),transparent 35%)}
+.culture-topline{position:absolute;left:8vw;right:8vw;top:52px;z-index:3;display:flex;align-items:center;justify-content:space-between}
+.culture-topline .eyebrow{color:#fff}
+.culture-progress{display:flex;gap:9px}
+.culture-progress span{width:42px;height:2px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.culture-progress span:after{content:"";position:absolute;inset:0;background:#8fc6d8;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.culture-progress span.active:after{transform:scaleX(1)}
+.culture-intro-note{position:absolute;left:8vw;bottom:38px;z-index:3;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.team-teaser-image{background:#dce9ef}
+
+/* SERVICES — image-through-type intro */
+.mask-section{height:145vh;background:#fff;position:relative}
+.mask-sticky{position:sticky;top:0;height:100vh;min-height:700px;display:flex;align-items:center;overflow:hidden;background:#fff}
+.mask-inner{width:min(1278px,calc(100% - 162px));margin:auto}
+.mask-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.35em;color:var(--teal);font-weight:700;margin-bottom:26px}
+.mask-title{margin:0;font:500 clamp(74px,10.2vw,156px)/.77 Georgia,serif;letter-spacing:-.055em;text-transform:uppercase;color:transparent;background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2200&q=90');background-size:150% auto;background-repeat:no-repeat;background-position:50% 35%;-webkit-background-clip:text;background-clip:text}
+.mask-support{margin-top:42px;display:grid;grid-template-columns:1fr 480px;gap:100px;align-items:start}
+.mask-support p{margin:0;font-size:19px;line-height:1.7;color:#40576b}
+.mask-support .mask-line{height:1px;background:var(--line);margin-top:14px}
+
+/* Services blocks: image and copy read as a single composition */
+.service-block{min-height:620px}
+.service-copy{padding:9vh 7vw;justify-content:center}
+.service-image{min-height:620px}
+.service-image img{width:100%;height:100%;object-fit:cover}
+.service-block:nth-child(even){background:#f4f8fa}
+
+/* Our Approach — line-based interactive journey */
+.approach-scroll{height:205vh;position:relative;background:var(--navy);color:#fff}
+.approach-sticky{position:sticky;top:0;height:100vh;min-height:720px;overflow:hidden;display:flex;align-items:center}
+.approach-inner{width:min(1278px,calc(100% - 162px));margin:auto}
+.approach-head{display:grid;grid-template-columns:1fr 470px;gap:110px;align-items:end;margin-bottom:92px}
+.approach-head h2{font:400 62px/1.02 Georgia,serif;letter-spacing:-.035em;margin:18px 0 0}
+.approach-head p{font-size:18px;line-height:1.7;color:rgba(255,255,255,.7);margin:0}
+.approach-line{position:relative;height:250px}
+.approach-base{position:absolute;left:6%;right:6%;top:115px;height:1px;background:rgba(255,255,255,.22)}
+.approach-fill{position:absolute;left:6%;top:115px;height:1px;width:0;background:linear-gradient(90deg,#73bfd2,#fff);box-shadow:0 0 18px rgba(115,191,210,.45)}
+.approach-runner{position:absolute;left:6%;top:108px;width:15px;height:15px;border-radius:50%;background:#fff;box-shadow:0 0 0 9px rgba(115,191,210,.18),0 0 30px rgba(115,191,210,.7);transform:translateX(-50%)}
+.approach-step{position:absolute;top:0;width:20%;transform:translateX(-50%);text-align:center;opacity:.42;transition:opacity .25s ease,transform .25s ease}
+.approach-step.s1{left:6%}.approach-step.s2{left:35.3%}.approach-step.s3{left:64.6%}.approach-step.s4{left:94%}
+.approach-step .marker{width:13px;height:13px;border-radius:50%;border:2px solid #73bfd2;background:var(--navy);position:absolute;left:50%;top:109px;transform:translateX(-50%);transition:.25s ease}
+.approach-step h3{font-size:16px;text-transform:uppercase;letter-spacing:.14em;margin:0 0 14px;color:#fff}
+.approach-step p{font-size:14px;line-height:1.55;color:rgba(255,255,255,.72);margin:0 auto;max-width:230px}
+.approach-step.active{opacity:1;transform:translateX(-50%) translateY(-4px)}
+.approach-step.active .marker{background:#73bfd2;box-shadow:0 0 0 7px rgba(115,191,210,.14)}
+
+/* Reporting — spaced editorial groups */
+.reporting-section{padding:125px 0}
+.reporting-top{display:grid;grid-template-columns:1fr 470px;gap:110px;align-items:end;margin-bottom:72px}
+.reporting-top h2{font:400 62px/1.02 Georgia,serif;letter-spacing:-.035em;margin:18px 0 0}
+.reporting-top p{font-size:18px;line-height:1.7;color:#52677b;margin:0}
+.reporting-groups{border-top:1px solid var(--line)}
+.report-group{display:grid;grid-template-columns:280px 1fr;gap:70px;padding:42px 0;border-bottom:1px solid var(--line)}
+.report-group h3{font:400 31px/1.08 Georgia,serif;margin:0}
+.report-list{display:grid;grid-template-columns:1fr 1fr;column-gap:42px}
+.report-list span{padding:10px 0;border-bottom:1px solid #edf1f3;color:#455b70;position:relative;padding-left:18px}
+.report-list span:before{content:"";position:absolute;left:0;top:19px;width:6px;height:6px;background:var(--teal)}
+
+/* Ad Hoc — full-bleed integrated image/content */
+.adhoc-band{display:grid;grid-template-columns:1fr 1fr;min-height:660px;background:var(--ice)}
+.adhoc-media{overflow:hidden;min-height:660px}
+.adhoc-media img{width:100%;height:100%;object-fit:cover}
+.adhoc-copy{padding:9vh 8vw;display:flex;flex-direction:column;justify-content:center}
+.adhoc-copy h2{font:400 56px/1.02 Georgia,serif;letter-spacing:-.035em;margin:18px 0 28px}
+.adhoc-copy p{font-size:17px;color:#4e657a;max-width:570px}
+.adhoc-copy ul{columns:1;margin-top:24px}
+
+@media(max-width:900px){
+ .culture-scroll,.approach-scroll,.mask-section{height:auto}
+ .culture-sticky,.approach-sticky,.mask-sticky{position:relative;height:auto;min-height:0}
+ .culture-track{display:block;transform:none!important}.culture-slide{width:100%;height:auto;min-height:720px;grid-template-columns:1fr}.culture-slide-media{height:360px;order:-1}.culture-slide-copy{padding:65px 24px}.culture-topline,.culture-intro-note{display:none}
+ .mask-inner{width:calc(100% - 36px);padding:85px 0}.mask-title{font-size:74px;line-height:.82;background-size:cover}.mask-support{grid-template-columns:1fr;gap:28px}
+ .approach-inner{width:calc(100% - 36px);padding:80px 0}.approach-head{grid-template-columns:1fr;gap:28px;margin-bottom:60px}.approach-head h2{font-size:46px}.approach-line{height:auto;padding-left:30px}.approach-base,.approach-fill,.approach-runner{left:6px;right:auto;top:0;height:100%;width:1px}.approach-fill{height:0}.approach-runner{display:none}.approach-step,.approach-step.s1,.approach-step.s2,.approach-step.s3,.approach-step.s4{position:relative;left:auto;top:auto;transform:none!important;width:100%;text-align:left;opacity:1;padding:0 0 45px 24px}.approach-step .marker{left:-24px;top:2px}.approach-step p{margin:0;max-width:none}
+ .reporting-top{grid-template-columns:1fr;gap:28px}.reporting-top h2{font-size:46px}.report-group{grid-template-columns:1fr;gap:22px}.report-list{grid-template-columns:1fr}
+ .adhoc-band{grid-template-columns:1fr}.adhoc-media{min-height:430px}.adhoc-copy{padding:70px 24px}
+}
