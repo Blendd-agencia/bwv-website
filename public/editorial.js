@@ -47,3 +47,10 @@ if(approach){
   };
   addEventListener('scroll',renderApproach,{passive:true});addEventListener('resize',renderApproach);renderApproach();
 }
+
+
+const globalHeader=document.querySelector('.header');
+if(globalHeader){
+  const setHeader=()=>globalHeader.classList.toggle('is-fixed',scrollY>130);
+  addEventListener('scroll',setHeader,{passive:true});setHeader();
+}
