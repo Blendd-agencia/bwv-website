@@ -6,10 +6,10 @@
 <title>BWV Business & Tax Advisors</title>
 <meta name="description" content="BWV Business & Tax Advisors">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap');
 :root{
   --navy:#071d37;--ink:#0a2340;--teal:#367a94;--ice:#dce9ef;--line:#d8e3e8;--white:#fff;
-  --content:1278px;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif
+  --content:1278px;--serif:'Roboto Serif',Georgia,serif;--sans:'DM Sans',Arial,sans-serif
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -22,7 +22,7 @@ button{font:inherit}
 .eyebrow{font-size:10px;line-height:1;text-transform:uppercase;letter-spacing:.48em;font-weight:500}
 .eyebrow.line{display:flex;align-items:center;gap:12px}
 .eyebrow.line:after{content:"";width:30px;height:1px;background:currentColor;opacity:.75}
-.btn{height:56px;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:0 29px;background:var(--teal);color:#fff;border:1px solid var(--teal);font-weight:600;font-size:14px;transition:.25s ease;cursor:pointer}
+.btn{height:56px;display:inline-flex;align-items:center;justify-content:center;gap:28px;padding:0 29px;background:var(--teal);color:#fff;border:1px solid var(--teal);font-weight:600;font-size:14px;transition:.25s ease;cursor:pointer}
 .btn:hover{background:#2d6e86;border-color:#2d6e86}
 .btn.outline{background:transparent;color:var(--teal)}
 .btn.outline:hover{background:var(--teal);color:#fff}
@@ -34,7 +34,7 @@ button{font:inherit}
  url('https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/b2e8bdd9-fe58-426a-b685-1a983119b682.png') center/cover no-repeat}
 .hero-inner{height:100%;position:relative}
 .site-header{position:absolute;left:0;right:0;top:36px;height:42px;display:flex;align-items:center;z-index:20}
-.brand{width:198px;height:42px;flex:0 0 auto}
+.brand{width:228px;height:48px;flex:0 0 auto}
 .brand img{width:100%;height:100%;object-fit:contain;object-position:left center}
 .nav{margin-left:auto;display:flex;align-items:center;gap:31px;font-size:14px}
 .nav-link{height:42px;display:flex;align-items:center;position:relative;white-space:nowrap}
@@ -196,8 +196,26 @@ button{font:inherit}
  .cta-box{height:auto;padding:60px 24px}.cta-box h2{font-size:48px}.cta-buttons{flex-direction:column}
  .footer{height:auto;min-height:300px}.footer-inner{width:calc(100% - 32px);margin:0 auto;padding:45px 0}.footer-bottom{flex-direction:column}.footer-links{flex-wrap:wrap}
 }
+
+/* Client feedback round */
+.site-header.is-fixed{position:fixed;top:0;left:50%;right:auto;transform:translateX(-50%);width:min(var(--content),calc(100% - 48px));height:76px;padding:0 18px;background:rgba(7,29,55,.94);backdrop-filter:blur(14px);box-shadow:0 12px 32px rgba(2,15,29,.16);z-index:999}
+.site-header.is-fixed .brand{width:205px;height:44px}
+.check-box{display:inline-grid;place-items:center;width:16px;height:16px;background:var(--teal);color:#fff;font:700 11px/1 var(--sans);margin-right:7px;vertical-align:1px}
+.role-intro .eyebrow.line.centered:before{content:"";width:30px;height:1px;background:currentColor;opacity:.75}
+.scroll-reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.65,.3,1),transform .7s cubic-bezier(.2,.65,.3,1)}
+.scroll-reveal.visible{opacity:1;transform:none}
+.testimonials .container{overflow:hidden}
+.test-cards{display:flex!important;grid-template-columns:none!important;width:max-content;transition:transform .7s cubic-bezier(.2,.7,.25,1)}
+.test-card{flex:0 0 416px}
+.footer-ghost-text{position:absolute;left:-15px;bottom:-42px;font:500 215px/.8 var(--serif);letter-spacing:-.08em;color:#fff;opacity:.07;pointer-events:none}
+.footer .social svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.7}
+@media(max-width:900px){
+ .site-header.is-fixed{width:calc(100% - 24px);height:68px;padding:0 12px}
+ .site-header.is-fixed .brand{width:170px}
+ .test-card{flex-basis:calc(100vw - 64px)}
+}
 </style>
-</head>
+<link rel="icon" type="image/png" href="https://drive.google.com/thumbnail?id=1kXFoi7lVomHOfxoIuY5c1U2kXuZSSFA5&sz=w128"></head>
 <body>
 
 <section class="hero" id="home">
@@ -285,8 +303,8 @@ button{font:inherit}
         <img class="benefit-photo" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/97d3749b-ad6f-41ab-b093-382c62dc4f4a.png" alt="">
         <div class="benefit-card">
           <h2>Benefits to our<br>clients</h2>
-          <div class="benefit-item"><h4>☑ Minimising tax compliance costs</h4><p>This can be achieved through accurate and timely filling in of tax returns, and the compliance of legal accounting and administrative procedures, thus avoiding tax penalties and late payment interests that could otherwise occur.</p></div>
-          <div class="benefit-item"><h4>☑ Taking advantage of tax incentives and other benefits</h4><p>Examples: (1) Helping our clients to recover VAT not collected from bad debts. (2) Assisting our clients to choose the correct location to manage their operations.</p></div>
+          <div class="benefit-item"><h4><span class="check-box">✓</span> Minimising tax compliance costs</h4><p>This can be achieved through accurate and timely filling in of tax returns, and the compliance of legal accounting and administrative procedures, thus avoiding tax penalties and late payment interests that could otherwise occur.</p></div>
+          <div class="benefit-item"><h4><span class="check-box">✓</span> Taking advantage of tax incentives and other benefits</h4><p>Examples: (1) Helping our clients to recover VAT not collected from bad debts. (2) Assisting our clients to choose the correct location to manage their operations.</p></div>
           <a class="btn" href="/find-us">Talk to Us <span class="arrow">↗</span></a>
         </div>
       </div>
@@ -297,9 +315,9 @@ button{font:inherit}
         <img class="benefit-photo" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/e87ac769-b530-4296-98fa-e382a94bec90.png" alt="">
         <div class="benefit-card">
           <h2>Benefits to society<br>in general</h2>
-          <div class="benefit-item"><h4>☑ When a company invests</h4><p>for instance in a low income jurisdiction, the local population benefits from that investment.</p></div>
-          <div class="benefit-item"><h4>☑ By guiding businesses</h4><p>to take advantage of tax initiatives, we are helping with the local government’s objectives of attracting investment and development.</p></div>
-          <div class="benefit-item"><h4>☑ By helping individuals</h4><p>especially the retired from northern Europe, to move to Portugal and take advantage of the “Regime for Non-Habitual Residents”.</p></div>
+          <div class="benefit-item"><h4><span class="check-box">✓</span> When a company invests</h4><p>for instance in a low income jurisdiction, the local population benefits from that investment.</p></div>
+          <div class="benefit-item"><h4><span class="check-box">✓</span> By guiding businesses</h4><p>to take advantage of tax initiatives, we are helping with the local government’s objectives of attracting investment and development.</p></div>
+          <div class="benefit-item"><h4><span class="check-box">✓</span> By helping individuals</h4><p>especially the retired from northern Europe, to move to Portugal and take advantage of the “Regime for Non-Habitual Residents”.</p></div>
           <a class="btn" href="/find-us">Talk to Us <span class="arrow">↗</span></a>
         </div>
       </div>
@@ -310,18 +328,18 @@ button{font:inherit}
 <section class="role" id="media">
   <div class="container">
     <div class="role-intro">
-      <div class="eyebrow line" style="justify-content:center">THE ROLE OF AN ACCOUNTANT</div>
+      <div class="eyebrow line centered">THE ROLE OF AN ACCOUNTANT</div>
       <h2>More than numbers.<br>A partner in your business.</h2>
       <p>Hear directly from our team on how the right accounting partner does more than keep the books helping businesses grow with confidence.</p>
     </div>
-    <div class="role-media"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/768f38af-7fce-4f72-b034-9bfb449c712d.png" alt=""><button class="play" aria-label="Play video">▶</button></div>
+    <div class="role-media" id="roleMedia"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3EtJb11RwjFQR3KZgzMKLKWXBLs/768f38af-7fce-4f72-b034-9bfb449c712d.png" alt=""><button class="play" id="rolePlay" aria-label="Play video">▶</button></div>
   </div>
 
   <div class="trustbar">
-    <div class="metric"><strong>10+</strong><span>Years of Experience</span></div>
-    <div class="metric"><strong>21+</strong><span>Team Members</span></div>
-    <div class="metric"><strong>65%</strong><span>Client Retention</span></div>
-    <div class="metric"><strong>95+</strong><span>Projects Completed</span></div>
+    <div class="metric"><strong data-count="10" data-suffix="+">0+</strong><span>Years of Experience</span></div>
+    <div class="metric"><strong data-count="21" data-suffix="+">0+</strong><span>Team Members</span></div>
+    <div class="metric"><strong data-count="65" data-suffix="%">0%</strong><span>Client Retention</span></div>
+    <div class="metric"><strong data-count="95" data-suffix="+">0+</strong><span>Projects Completed</span></div>
   </div>
 </section>
 
@@ -369,11 +387,11 @@ button{font:inherit}
 </section>
 
 <footer class="footer" id="find">
-  <div class="footer-ghost"><img src="/brand/bwv-logo-white.svg" alt=""></div>
+  <div class="footer-ghost-text" aria-hidden="true">BWV</div>
   <div class="footer-inner">
     <div class="footer-top">
       <div class="powered">Powered by <a href="#">Blendd</a></div>
-      <div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="WhatsApp">◉</a><a href="#" aria-label="Instagram">◎</a></div>
+      <div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.6Z"/><path d="M8.4 7.8c.3-.6.6-.6.9-.6h.7l1 2.4-.7.8c-.2.2-.1.5 0 .7.8 1.5 1.9 2.5 3.4 3.2.3.1.5.1.7-.1l.9-1.1 2.4 1.1c.3.1.5.3.4.6-.2.8-.7 1.5-1.5 1.8-.7.3-1.7.3-3.6-.5-2.2-.9-4.3-2.9-5.4-5-.9-1.7-.2-3 .8-3.3Z"/></svg></a><a href="https://www.instagram.com/bwv_business/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".8" fill="currentColor" stroke="none"/></svg></a></div>
     </div>
     <div class="footer-bottom"><span>Copyright © 2026 BWV Business & Tax Advisors. All Rights Reserved.</span><div class="footer-links"><a href="/terms-and-conditions">Terms & Conditions</a><a href="/privacy-policy">Privacy Policy</a><a href="/cookie-policy">Cookie Policy</a></div></div>
   </div>
@@ -412,6 +430,48 @@ function benefitScroll(){
  panel2.style.transform='translate3d(0,'+((1-x)*100)+'%,0)';
 }
 addEventListener('scroll',benefitScroll,{passive:true});addEventListener('resize',benefitScroll);benefitScroll();
+
+const siteHeader=document.querySelector('.site-header');
+const setStickyHeader=()=>siteHeader&&siteHeader.classList.toggle('is-fixed',scrollY>130);
+addEventListener('scroll',setStickyHeader,{passive:true});setStickyHeader();
+
+document.querySelectorAll('.about-intro,.about-body,.trust-title,.role-intro,.role-media,.trustbar,.section-intro,.news-grid,.cta-box').forEach(el=>el.classList.add('scroll-reveal'));
+const revealObs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.scroll-reveal').forEach(el=>revealObs.observe(el));
+
+let heroAutoDir=1;
+let heroAuto=setInterval(()=>{if(hDragging)return;const max=heroMax();if(max<=0)return;hOffset=heroAutoDir>0?max:0;heroAutoDir*=-1;heroRender()},4000);
+heroViewport.addEventListener('mouseenter',()=>clearInterval(heroAuto));
+heroViewport.addEventListener('mouseleave',()=>{heroAuto=setInterval(()=>{if(hDragging)return;const max=heroMax();if(max<=0)return;hOffset=heroAutoDir>0?max:0;heroAutoDir*=-1;heroRender()},4000)});
+
+const rolePlay=document.getElementById('rolePlay');
+if(rolePlay){
+ rolePlay.addEventListener('click',()=>{
+  const wrap=document.getElementById('roleMedia');
+  wrap.innerHTML='<iframe width="100%" height="100%" src="https://www.youtube.com/embed/p1MZodX89hs?autoplay=1" title="BWV video" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+ });
+}
+
+const metricObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+ if(!entry.isIntersecting||entry.target.dataset.done)return;
+ entry.target.dataset.done='1';
+ const el=entry.target,target=Number(el.dataset.count),suffix=el.dataset.suffix||'';
+ const start=performance.now(),dur=1200;
+ function tick(now){const p=Math.min(1,(now-start)/dur);const eased=1-Math.pow(1-p,3);el.textContent=Math.round(target*eased)+suffix;if(p<1)requestAnimationFrame(tick)}
+ requestAnimationFrame(tick);
+}),{threshold:.6});
+document.querySelectorAll('.metric strong[data-count]').forEach(el=>metricObserver.observe(el));
+
+const testTrack=document.querySelector('.test-cards');
+if(testTrack){
+ const originals=[...testTrack.children];
+ originals.forEach(n=>testTrack.appendChild(n.cloneNode(true)));
+ let ti=0;
+ const step=()=>{const card=testTrack.querySelector('.test-card');if(!card)return;const gap=15;ti++;testTrack.style.transform='translate3d('+(-(card.getBoundingClientRect().width+gap)*ti)+'px,0,0)';if(ti>=originals.length){setTimeout(()=>{testTrack.style.transition='none';ti=0;testTrack.style.transform='translate3d(0,0,0)';requestAnimationFrame(()=>requestAnimationFrame(()=>testTrack.style.transition='transform .7s cubic-bezier(.2,.7,.25,1)'))},760)}};
+ setInterval(step,4500);
+}
+
+document.querySelectorAll('.feature-story,.side-story').forEach(card=>{card.style.cursor='pointer';card.setAttribute('role','link');card.tabIndex=0;const go=()=>location.href='/news-reports/youth-irs-2025';card.addEventListener('click',go);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')go()})});
 </script>
 </body>
 </html>
