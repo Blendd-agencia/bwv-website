@@ -302,3 +302,6 @@ body{font-family:'DM Sans',Arial,Helvetica,sans-serif}
  .header.is-fixed{width:calc(100% - 24px);height:68px;padding:0 12px}
  .header.is-fixed .brand{width:170px}
 }
+
+.arrow{font-size:18px;line-height:1;transform:translateY(-1px)}
+.talk{gap:18px}
