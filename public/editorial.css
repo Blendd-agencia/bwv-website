@@ -305,3 +305,5 @@ body{font-family:'DM Sans',Arial,Helvetica,sans-serif}
 
 .arrow{font-size:18px;line-height:1;transform:translateY(-1px)}
 .talk{gap:18px}
+
+.footer-ghost-text{position:absolute;left:-15px;bottom:-42px;font:500 215px/.8 'Roboto Serif',Georgia,serif;letter-spacing:-.08em;color:#fff;opacity:.07;pointer-events:none}
